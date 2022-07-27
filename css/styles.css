@@ -26,6 +26,23 @@ p {
   margin-bottom: 0;
 }
 
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -55,10 +72,39 @@ p {
   text-decoration: none;
 }
 
-/* Хедер */
+/*==========Хедер============= */
 
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
   background-color: var(--primary-white-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact-nav {
+  display: flex;
+}
+
+.contact-nav-mail {
+  margin-right: 50px;
 }
 
 .logo {
@@ -70,6 +116,7 @@ p {
 
 .logo.header {
   color: var(--secondary-black-color);
+  margin-right: 93px;
 }
 
 .logo-accent {
